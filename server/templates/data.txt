@@ -1,0 +1,11 @@
+{"list":[
+  {"dimensions": "153.5 x 73.9 x 7.9 mm (6.04 x 2.91 x 0.31 in)"},
+   {"weight": "143g"},
+ {"size": "4.7 inches"},
+   {"resolution": "750 x 1334 pixels"},
+ {"internal": "16GB / 64GB / 128 GB"},
+ {"primary": "12 MP"},
+ {"os": "iOS 9"},
+ {"battery": "Non Removable Li-Po 1715 mAh battery (6.9Wh)"},
+ {"colors": "Rose Gold, Silver, Black, Gold"}
+]}

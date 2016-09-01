@@ -6,15 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body ng-app="myApp">
+<body ng-app="app">
 
 <div  ng-controller="FeaturesController as fc">
-<div>{{fc.title}}</div>
+<div id="title">{{fc.title}}</div>
+<div>
+<div >
+  <my-directive></my-directive>
+  <table >
+    <tr ng-repeat= "feature in fc.features">
+      <td>
+        {{feature.name}}
+      </td>
+      <td>
+        {{feature.value}}
+      </td>
+    </tr>
+  </table>
+  <!--
+<p id="dimensions">Dimensions:{{fc.features.body.dimensions}}</p>
+<p id= "weight">Weight: {{fc.features.body.weight}}</p>
+<p id = "size">Size: {{fc.features.display.size}}</p>
+<p id = "resolution">Resolution: {{fc.features.display.resolution}}</p>
+<p id="memory">Memory: {{fc.features.memory.internal}}</p>
+<p id= "camera">Camera: {{fc.features.cam.primary}}</p>
+<p id="platform">Platfor: {{fc.features.platform.os}}</p>
+<p id="battery">Battery: {{fc.features.bat.battery}}</p>
+<p id="battery">Colors: {{fc.features.Colors.colors}}</p>
+-->
+</div>
 
+
+</div>
+
+</div>
 
 </div>
 
 <script src="vendor/angular/angular.js"></script>
 <script src="main/app.js"></script>
+<script src="features/features.js"></script>
+<script src="directives/phoneDirectives.js"></script>
+<script src="features/featuresController.js"></script>
+<script src="features/featuresFactory.js"></script>
 </body>
 </html>
